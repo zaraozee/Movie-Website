@@ -1,0 +1,208 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@media (max-width: 768px) {
+    .header-container h1 {
+        font-size: 32px;
+    }
+    
+    .fav-item {
+        width: 45%;
+    }
+    
+    .search-box {
+        width: 95%;
+    }
+}
+
+/* Header Bar */
+.header {
+    height: 30vh;
+    background: linear-gradient(to bottom right, #011d3e, #004080);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.header-link a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+.header-link a:hover {
+    color: #bababa;
+}
+
+/* Search Bar */
+.search-box {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #61dafb;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.search-box button:hover {
+    background-color: #21a1f1;
+}
+
+/* Main Container */
+.main {
+    background-color: #e1e1e1;
+    padding: 40px;
+    min-height: 63vh;
+}
+
+/* Watermark Area / Start Exploring Section */
+.start-exploring {
+    color: #b1b1b1;
+    width: 50%;
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.start-exploring span {
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+.fav-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.fav-item:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+}
+.fav-item {
+    width: 15%; 
+    min-width: 160px;
+    box-shadow: 1px 2px #a1a1a1;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.fav-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fav-poster img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.fav-details-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 5px 5px 0px;
+}
+
+.fav-movie-name {
+    color: black;
+    font-size: 15px;
+    margin-bottom: 0rem;
+}
+
+.fav-movie-rating {
+    color: #6f6f6f;
+    font-style: italic;
+    font-size: 13px;
+    margin-bottom: 0rem;
+}
+.fav-trash-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: maroon;
+    cursor: pointer;
+}
+
+/* Rating Stars */
+.star-rating {
+    color: #FFD700; 
+    font-size: 14px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.star-rating .fa-star-half-alt {
+    color: #FFD700;
+}
+
+.star-rating .rating-text {
+    margin-left: 8px;
+    color: #6f6f6f;
+    font-style: italic;
+    font-size: 13px;
+}
+
